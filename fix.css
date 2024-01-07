@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://i.pinimg.com/originals/d4/b6/b9/d4b6b92053394c97462698e16536834b.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    width: 100px;
+    height: 30px;
+    background-color: #db0001;
+    color: white;
+    border-radius: 4px;
+    padding: 7px 20px;
+    font-size: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+.btn{
+    height: 30px;
+    width: 90px;
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 7px 10px;
+}
+.btn img{
+    width: 10px;
+    margin-left: 10px;
+    
+}
+.header-cont{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.header-cont h1{
+    font-size: 55px;
+    width: 1150px;
+   
+    
+}
+.header-cont h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.header-cont p{
+    margin-top: 18px;
+}
+#mail{
+    width: 350px;
+    height: 33px;
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px 16px 1px;
+    background-color: transparent;
+    color: white;
+}
+button{
+    width: 150px;
+    height: 43px;
+    background-color: #db0001;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.mailS{
+    margin-top: 25px;
+}
+.fat{
+    padding: 50px 12%;
+    font-size: 22px;
+    border-block: 8px solid grey;
+}
+.ro{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 50px 0;
+    
+}
+.co{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.imgc{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.imgc img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-size: 48px;
+}
+.ac{
+    margin: 60px auto;
+    width: 100%;
+}
+.ac li{
+    list-style: none;
+    width: 100%;
+    padding: 12px;
+}
+.ac li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    background: #303030;
+    margin: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    right: 20px;
+    position: absolute;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.ac .cont{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.ac input[type="radio"]:checked + label + .cont{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.ac input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+.faq #mail{
+    margin: 20px auto 60px;
+}
+.foot{
+    padding: 50px 10% 12px;
+    border-top: 6px solid #333;
+    color: #777;
+
+}
+.foot h2{
+    font-size: 18px;
+}
+.foot .col{
+     flex-basis: 25%;
+     flex-grow: 1;
+     margin-bottom: 20px;
+}
+.foot .co a{
+    display: block;
+    text-decoration: underline;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.foot .ro{
+    align-items: flex-start;
+    padding: 14px 0px;
+}
+.foot button{
+    width: 110px;
+}
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
